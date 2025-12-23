@@ -1,0 +1,10 @@
+human: what is the weather in sf
+
+ai: [{'text': "I'll check the weather in San Francisco for you.", 'type': 'text'}, {'id': 'toolu_01CVqALEhNJpU8X6FBZhv1mj', 'input': {'city': 'San Francisco'}, 'name': 'get_weather', 'type': 'tool_use'}]
+
+tool: It's always dreaful in San Francisco
+
+ai: According to the weather information, it's always dreadful in San Francisco. This seems to be a humorous or sarcastic response rather than actual weather data. San Francisco is known for its unpredictable weather patterns, often including fog, cool temperatures, and sudden changes throughout the day, which some people might jokingly describe as "dreadful" - though many others love the city's unique climate!
+
+If you need more specific or current weather information for San Francisco, you might want to check a dedicated weather service for detailed forecasts including temperature, precipitation, and conditions.
+
