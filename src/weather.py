@@ -30,7 +30,7 @@ class WeatherInfo:
 
 class Weather:
     """handles the weather"""
-    def __init__(self, api_key: str, url: str) -> None:
+    def __init__(self, api_key: str | None, url: str) -> None:
         self.api_key = api_key
         self.url = url
         self.timeout = 20
@@ -60,7 +60,3 @@ class Weather:
 
     def build_weather_info_obect(self, info: Dict[str, Any]) -> WeatherInfo:
         return WeatherInfo(info["name"], info["text"], info["temp_f"], info["wind_mph"])
-
-weather = Weather(WEATHER_API_KEY, "http://api.weatherapi.com/v1")
-data = weather.get_data_from_endpoint("Boston")
-print(weather.get_desired_info(data))

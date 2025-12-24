@@ -14,7 +14,7 @@ from langchain.agents.structured_output import ToolStrategy
 from langchain.agents import create_agent
 
 load_dotenv()
-WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
+WEATHER_API_KEY: str | None = os.getenv("WEATHER_API_KEY")
 checkpointer = InMemorySaver()
 
 SYSTEM_PROMPT = """
@@ -95,7 +95,7 @@ response = agent.invoke(
             }]
     },
     config = config,
-    context=Context(user_id="ye")
+    context=Context(user_id="1")
 )
 
-print(response['structured_response'])
+print(response)
